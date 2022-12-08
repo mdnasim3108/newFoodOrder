@@ -1,0 +1,135 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    align-items: center;
+    justify-content:space-between;
+    gap: 1rem;
+    padding: 1rem 7%;
+    position: fixed;
+    background-color: #8a2b06;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    color: white;
+    overflow: visible;
+}
+
+.imge img{
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+}
+
+.imge {
+    width: 100%;
+    height: 25rem;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+
+a {
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width:620px) {
+    .header {
+        padding: 3.3rem 10%;
+    }
+
+    .hbtn {
+        padding: 0.5rem 2rem
+    }
+}
+#button-9 {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #c44b4b;
+    border-radius: 40px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: auto 1rem;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#button-9:disabled {
+    cursor: default;
+}
+
+#button-9:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.userProfile .dropMenu {
+    position: absolute;
+    margin-left: 5rem;
+    display: none;
+    background-color: #f9f9f9;
+    width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0px 0;
+    z-index: 1;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center
+}
+
+.userProfile:hover .dropMenu {
+    display: block;
+}
+
+.userProfile .dropMenu h6:hover{
+    background-color:darkorange
+}
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+@media screen and (max-width:500px){
+    #button-9{
+        width: 4rem;
+    }
+    #button-9 p{
+        display: none;
+    }
+    .userProfile .dropMenu{
+        width: 100px;
+        font-size: 13px;
+        margin: 0 -0.2rem;
+    }
+}

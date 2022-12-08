@@ -1,0 +1,39 @@
+#mealForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.top input {
+    margin-left: 8px;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    width: 3rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.AddMeals {
+    padding: 6px 8px;
+    background-color: #4d1601;
+    color: white;
+    border-radius: 20px;
+    width: 5rem;
+    font-weight: bold;
+}
+
+.AddMeals:hover {
+    cursor: pointer;
+}
+
+#label {
+    font-weight: bold;
+}
+@media screen and (max-width:500px){
+    #mealForm{
+        align-items: flex-end;
+    }
+  
+}

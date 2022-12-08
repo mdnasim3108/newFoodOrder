@@ -1,0 +1,50 @@
+.items_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    height: auto;
+}
+.items_side span{
+    position: relative;
+    bottom:13px;
+}
+.items_side .quantity{
+    border: 1px solid #ccc;
+    padding: 0.5px 5px;
+    border-radius: 3px;
+    font-size: small;
+    position: relative;
+    bottom: 35px;
+    left:10rem
+}
+.items_add button{
+    padding: 2px 15px;
+    border-radius: 3px;
+    border: 2px solid #ccc;
+    color: #8a2b06;
+    background-color: transparent;
+    margin-right: 0.2rem;
+    font-weight: bolder;
+}
+.items_add button:hover{
+       background-color: rgb(232, 226, 226);
+}
+.item_price{
+    font-weight: bold;
+    color: #5a1a01;
+    height: 10px;
+}
+#del{
+    color: red;
+}
+.leftSide h3{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+@media screen and (max-width:500px){
+    .items_side .quantity{
+        left:5rem
+    }
+}

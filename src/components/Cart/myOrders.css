@@ -1,0 +1,8 @@
+
+li{
+    list-style: none;
+}
+
+.MyorderItems,.MyOrderAddress,.MyOrderStatus{
+    text-align: left;
+}
