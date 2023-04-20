@@ -10,7 +10,7 @@ function App() {
     if (localStorage.getItem("name")) {
       setLogin(true)
     }
-    axios.post("https://ordersserver-production.up.railway.app/myorder", { Name: localStorage.getItem("name") })
+    axios.post("https://ordersend.onrender.com/myorder", { Name: localStorage.getItem("name") })
       .then((res) => {
         if (res.data.orderItems.length) {
           localStorage.setItem("isOrdered", true)
