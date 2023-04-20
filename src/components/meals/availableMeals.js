@@ -7,7 +7,7 @@ const AvailableMeals = () => {
     const [DUMMY_MEALS,setDUMMY_MEALS]=useState([])
     const flag=0
     useEffect(()=>{
-        Axios.get("https://meal-server-production.up.railway.app/listmeals")
+        Axios.get("https://measlserver.onrender.com/listmeals")
         .then((res)=>{
          setDUMMY_MEALS(res.data)
         })
