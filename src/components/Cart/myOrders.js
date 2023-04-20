@@ -12,7 +12,7 @@ const MyOrders = (props) => {
         </div>
     )
     useEffect(() => {
-        axios.post("https://ordersserver-production.up.railway.app/myorder", { Name: localStorage.getItem("name") })
+        axios.post("https://ordersend.onrender.com/myorder", { Name: localStorage.getItem("name") })
             .then((res) => {
                 setOrders(
                     <OrderDetails
