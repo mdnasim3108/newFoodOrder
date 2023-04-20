@@ -10,7 +10,7 @@ const Checkout = (props) => {
     const items = cart.items
     const OrderActions = async (token) => {
         try {
-            await axios.post("https://ordersserver-production.up.railway.app/generateToken", { token, subTotal, items })
+            await axios.post("https://ordersend.onrender.com/generateToken", { token, subTotal, items })
                 .then(async(res) => {
                     const data=await JSON.parse(res.config.data);
                     let OrderId=data.token.id;
