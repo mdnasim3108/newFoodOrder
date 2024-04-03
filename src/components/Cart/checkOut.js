@@ -20,7 +20,7 @@ const Checkout = (props) => {
                     let transactionId=data.token.card.id;
                     let shippingAddress={address_city,address_country,address_line1,address_zip}
                     let name=localStorage.getItem("name")
-                    axios.post("https://ordersserver-production.up.railway.app/placeOrder",{OrderId,orderItems,orderAmount,transactionId,shippingAddress,name})
+                    axios.post("https://ordersend.onrender.com/placeOrder",{OrderId,orderItems,orderAmount,transactionId,shippingAddress,name})
                     .then(()=>{
                             localStorage.setItem("isOrdered",true)
                             status.confirm()
